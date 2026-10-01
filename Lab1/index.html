@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Товч CV</title>
+</head>
+
+<body>
+
+    <!-- Үндсэн гарчиг -->
+    <header>
+        <h1>Нэр: МАШБАТ БАТЗОРИГ</h1>
+
+        <p>
+            Мэдээллийн технологийн сургуулийн 2-р курсын оюутан.
+            Вэб хөгжүүлэлт болон шинэ технологиудыг сонирхон судалдаг.
+        </p>
+    </header>
+
+
+    <!-- Хувийн мэдээлэл -->
+    <section>
+        <h2>Хувийн мэдээлэл</h2>
+
+        <form>
+
+            <label for="name">Овог нэр:</label>
+            <input type="text" id="name" name="name"
+                   value="Машбат Батзориг">
+            <br><br>
+
+            <label for="email">И-мэйл:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com">
+            <br><br>
+
+            <label for="phone">Утасны дугаар:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="88112233">
+            <br><br>
+
+            <label for="birth">Төрсөн огноо:</label>
+            <input type="date" id="birth" name="birth">
+            <br><br>
+
+            <label>Хүйс:</label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Эрэгтэй</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Эмэгтэй</label>
+
+        </form>
+    </section>
+
+
+    <!-- Боловсрол -->
+    <section>
+        <h2>Боловсрол</h2>
+
+        <label for="education">Суралцаж буй түвшин:</label>
+
+        <select id="education" name="education">
+            <option value="1">1-р курс</option>
+            <option value="2" selected>2-р курс</option>
+            <option value="3">3-р курс</option>
+            <option value="4">4-р курс</option>
+        </select>
+
+        <br><br>
+
+        <label for="school">Сургууль:</label>
+        <input type="text" id="school" name="school"
+               value="Мэдээллийн технологийн сургууль">
+
+        <br><br>
+
+        <label for="major">Мэргэжил:</label>
+        <input type="text" id="major" name="major"
+               value="Программ хангамжийн инженерчлэл">
+    </section>
+
+
+    <!-- Эзэмшсэн чадварууд -->
+    <section>
+        <h2>Эзэмшсэн чадварууд</h2>
+
+        <p>Өөрийн эзэмшсэн чадваруудаас сонгоно уу:</p>
+
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML5</label>
+        <br>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS3</label>
+        <br>
+
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label>
+        <br>
+
+        <input type="checkbox" id="git" name="skills" value="Git">
+        <label for="git">Git & GitHub</label>
+        <br>
+
+        <input type="checkbox" id="python" name="skills" value="Python">
+        <label for="python">Python</label>
+    </section>
+
+
+    <!-- Сонирхол -->
+    <section>
+        <h2>Сонирхол</h2>
+
+        <label for="interest">Хамгийн их сонирхдог чиглэл:</label>
+
+        <select id="interest" name="interest">
+            <option value="">-- Сонгоно уу --</option>
+            <option value="web">Вэб хөгжүүлэлт</option>
+            <option value="game">Game Development</option>
+            <option value="mobile">Mobile Development</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cyber">Cyber Security</option>
+        </select>
+
+        <h3>Бусад сонирхол</h3>
+
+        <ul>
+            <li>Вэб хөгжүүлэлт</li>
+            <li>Программчлал</li>
+            <li>Тоглоом хөгжүүлэлт</li>
+            <li>Фото зураг</li>
+            <li>Кино үзэх</li>
+        </ul>
+    </section>
+
+
+    <!-- Өөрийн тухай -->
+    <section>
+        <h2>Өөрийн тухай</h2>
+
+        <label for="about">Товч танилцуулга:</label>
+        <br>
+
+        <textarea id="about" name="about"
+                  rows="5" cols="60"
+                  placeholder="Өөрийн тухай бичнэ үү..."></textarea>
+    </section>
+
+
+    <!-- Хичээлийн дүн -->
+    <section>
+        <h2>Хичээлийн дүн</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Хичээл</th>
+                    <th>Дүн</th>
+                    <th>Кредит</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Веб зохиомж</td>
+                    <td>95</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Мэдээллийн сан</td>
+                    <td>88</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Алгоритм</td>
+                    <td>92</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Java программчлал</td>
+                    <td>90</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- Файл -->
+    <section>
+        <h2>Нэмэлт мэдээлэл</h2>
+
+        <label for="photo">Профайл зураг:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <br><br>
+
+        <label for="website">Өөрийн веб сайт:</label>
+        <input type="url" id="website" name="website"
+               placeholder="https://example.com">
+    </section>
+
+
+    <!-- Холбоо барих -->
+    <section>
+        <h2>Холбоо барих</h2>
+
+        <p>
+            GitHub профайл:
+            <a href="https://github.com" target="_blank">
+                GitHub Холбоос
+            </a>
+        </p>
+
+        <p>
+            И-мэйл:
+            <a href="mailto:example@gmail.com">
+                example@gmail.com
+            </a>
+        </p>
+    </section>
+
+
+    <!-- Илгээх -->
+    <section>
+        <button type="submit">Мэдээлэл хадгалах</button>
+        <button type="reset">Дахин эхлүүлэх</button>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Машбат Батзориг</p>
+    </footer>
+
+</body>
+</html>

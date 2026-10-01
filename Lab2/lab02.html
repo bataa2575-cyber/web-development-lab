@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лаборатори 02: Хэрэглэгчийн анкет</title>
+    <link rel="stylesheet" href="lab2.css">
 </head>
 <body>
 
 <!-- Вэбийн толгой хэсэг -->
-<header>
- <h1>Оюутны Бүртгэлийн Портал</h1>
- <!-- Навигацийн цэс -->
- <nav>
-  <ul>
-   <li><a href="../index.html">Нүүр</a></li>
-   <li><a href="#">Анкет засах</a></li>
-   <li><a href="#">Тусламж</a></li>
-  </ul>
- </nav>
+<header class="header">
+    <h1>Оюутны Бүртгэлийн Портал</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#">Нүүр</a></li>
+            <li><a href="#">Анкет засах</a></li>
+            <li><a href="#">Тусламж</a></li>
+        </ul>
+    </nav>
 </header>
 
 
@@ -29,7 +30,7 @@
    <p>Доорх формын дагуу мэдээллээ бүрэн, үнэн зөв зааж бөглөнө үү.</p>
    <form action="#" method="POST" enctype="multipart/form-data">
     <!-- 1-р бүлэг: Хувийн мэдээлэл -->
-    <fieldset>
+    <fieldset class="form-box">
      <legend>Хувийн мэдээлэл</legend>
 
      <label for="fullname">Овог нэр:</label><br>
@@ -80,13 +81,14 @@
 
      <label for="bio">Товч танилцуулга / Өөрийн тухай:</label><br>
      <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Өөрийн танилцуулгыг энд бичнэ үү..."></textarea><br>
-    </fieldset>
+    </fieldset class="form-box">
 
     <br>
 
-    <!-- Илгээх ба Арилгах товчлуурууд -->
-    <button type="submit">Анкет Илгээх</button>
-    <button type="reset">Дахин эхлүүлэх</button>
+    <div class="buttons">
+        <button type="submit">Анкет Илгээх</button>
+        <button type="reset">Дахин эхлүүлэх</button>
+    </div>
    </form>
    <!-- Форм энд байрлана -->
   </section>
