@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Navigation - Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #555;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* Main layout - Grid */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+/* Book cards - Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    padding: 18px;
+    background-color: #fafafa;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.book-card p {
+    line-height: 1.5;
+}
+
+.book-card span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Sidebar */
+aside {
+    background-color: white;
+    padding: 20px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
