@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #555;
+    padding: 12px;
+}
+
+nav a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* Үндсэн layout */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+/* Номын карт */
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.book-card p {
+    line-height: 1.5;
+}
+
+.book-card span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Sidebar */
+aside {
+    background-color: white;
+    padding: 20px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* TABLET */
+@media (min-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 900px) {
+
+    header {
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr 280px;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
