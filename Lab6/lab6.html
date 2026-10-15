@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лаборатори 06: Animation Gallery</title>
+
+    <link rel="stylesheet" href="lab6.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Оюутны Номын Сан</h1>
+        <p>Ном унших, мэдлэгээ нэмэгдүүлэх орчин</p>
+
+        <button id="themeToggle" type="button" aria-pressed="false">
+             Dark Mode
+        </button>
+    </header>
+
+    <nav>
+        <a href="#home">Нүүр</a>
+        <a href="#gallery">Номын цомог</a>
+        <a href="#categories">Ангилал</a>
+        <a href="#multimedia">Мультимедиа</a>
+    </nav>
+
+    <div class="layout" id="home">
+
+        <main>
+
+            <section id="gallery">
+                <h2> Номын цомог</h2>
+                <p>Карт дээр дарж номын дэлгэрэнгүй мэдээллийг үзээрэй.</p>
+
+                <section class="book-grid">
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo1.jpeg"
+                                     alt="Программчлалын тухай номын зураг">
+                                <h3>Программчлалын үндэс</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Программчлалын үндэс</h3>
+                                <p>Алгоритм, хувьсагч болон программчлалын үндсэн ойлголтууд.</p>
+                                <span>Зохиогч: Бат</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo2.jpg"
+                                     alt="Вэб хөгжүүлэлтийн номын зураг">
+                                <h3>Вэб хөгжүүлэлт</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Вэб хөгжүүлэлт</h3>
+                                <p>HTML, CSS, JavaScript ашиглан веб сайт бүтээх.</p>
+                                <span>Зохиогч: Дорж</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo3.jpeg"
+                                     alt="Өгөгдлийн сангийн номын зураг">
+                                <h3>Өгөгдлийн сан</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Өгөгдлийн сан</h3>
+                                <p>Өгөгдлийн сангийн бүтэц, хүснэгт болон SQL.</p>
+                                <span>Зохиогч: Болд</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo4.jpeg"
+                                     alt="Java програмчлалын номын зураг">
+                                <h3>Java програмчлал</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Java програмчлал</h3>
+                                <p>Class, object, method болон Java хэлний үндэс.</p>
+                                <span>Зохиогч: Саруул</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo5.jpg"
+                                     alt="Алгоритмын номын зураг">
+                                <h3>Алгоритм</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Алгоритм</h3>
+                                <p>Өгөгдлийн бүтэц, эрэмбэлэлт болон хайлтын аргууд.</p>
+                                <span>Зохиогч: Мөнх</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-inner">
+                            <div class="book-front">
+                                <img src="img/photo6.jpeg"
+                                     alt="Компьютерийн ухааны номын зураг">
+                                <h3>Компьютерийн ухаан</h3>
+                            </div>
+
+                            <div class="book-back">
+                                <h3>Компьютерийн ухаан</h3>
+                                <p>Компьютерийн систем болон мэдээллийн технологи.</p>
+                                <span>Зохиогч: Тэмүүжин</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+            </section>
+
+            <section id="multimedia" class="multimedia">
+                <h2> Мультимедиа хэсэг</h2>
+
+                <h3>Номын сангийн танилцуулга</h3>
+
+                <video controls preload="metadata"
+                       width="100%"
+                       poster="img/photo7.jpg">
+
+                    <source src="video/clip.mp4" type="video/mp4">
+                    <source src="video/clip.webm" type="video/webm">
+
+                    <track src="video/clip.mn.vtt"
+                           kind="subtitles"
+                           srclang="mn"
+                           label="Монгол"
+                           default>
+
+                    Таны хөтөч видео тоглуулах боломжгүй байна.
+                </video>
+
+                <h3>Номын сангийн байршил</h3>
+
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=106.9%2C47.9%2C107.0%2C48.0&layer=mapnik"
+                    title="Улаанбаатар хотын газрын зураг"
+                    width="100%"
+                    height="300"
+                    loading="lazy">
+                </iframe>
+
+                <h3>Номын сангийн тэмдэг</h3>
+
+                <svg width="100" height="100"
+                     viewBox="0 0 100 100"
+                     role="img"
+                     aria-labelledby="svgTitle">
+
+                    <title id="svgTitle">Нээлттэй номын тэмдэг</title>
+
+                    <path d="M10 20 Q30 10 50 25 Q70 10 90 20
+                             L90 75 Q70 65 50 80
+                             Q30 65 10 75 Z"
+                          fill="#4f46e5"
+                          stroke="#312e81"
+                          stroke-width="3"/>
+
+                    <path d="M50 25 L50 80"
+                          stroke="white"
+                          stroke-width="3"/>
+                </svg>
+
+            </section>
+
+        </main>
+
+        <aside id="categories">
+            <h2>Ангилал</h2>
+
+            <ul>
+                <li>Программчлал</li>
+                <li>Вэб хөгжүүлэлт</li>
+                <li>Өгөгдлийн сан</li>
+                <li>Алгоритм</li>
+                <li>Компьютерийн ухаан</li>
+            </ul>
+
+            <h2>Мэдээлэл</h2>
+
+            <p>
+                Манай номын сангаас оюутнууд өөрийн
+                сонирхсон номоо сонгон унших боломжтой.
+            </p>
+
+            <button id="flipToggle" type="button" aria-pressed="false">
+                 Бүх картыг эргүүлэх
+            </button>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Оюутны Номын Сан</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
