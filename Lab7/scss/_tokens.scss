@@ -1,0 +1,45 @@
+$colors: (
+    "bg": #f4f4f4,
+    "surface": #ffffff,
+    "card": #fafafa,
+    "header": #333333,
+    "nav": #555555,
+    "hover": #222222,
+    "text": #333333,
+    "muted": #666666,
+    "border": #dddddd
+);
+
+$radii: (
+    "small": 6px,
+    "medium": 8px,
+    "large": 12px
+);
+
+$breakpoints: (
+    "tablet": 600px,
+    "desktop": 900px
+);
+
+:root {
+    @each $name, $value in $colors {
+        --#{$name}-color: #{$value};
+    }
+    @each $name, $value in $radii {
+        --radius-#{$name}: #{$value};
+    }
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --bg-color: #222222;
+    --surface-color: #303030;
+    --card-color: #383838;
+    --header-color: #171717;
+    --nav-color: #252525;
+    --hover-color: #444444;
+    --text-color: #eeeeee;
+    --muted-color: #bbbbbb;
+    --border-color: #555555;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

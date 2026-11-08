@@ -1,0 +1,15 @@
+@use "sass:math";
+@use "sass:color";
+
+@function rem($pixels, $base: 16px) {
+  @return math.div($pixels, $base) * 1rem;
+}
+
+// Өгөгдсөн өнгөнөөс тохирох текстийн өнгө сонгох
+@function contrast($background) {
+  @if color.channel($background, "lightness", $space: hsl) > 50% {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}

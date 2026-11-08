@@ -1,0 +1,28 @@
+@use "mixins" as m;
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+
+    @include m.respond("desktop") {
+        grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+        align-items: start;
+    }
+}
+
+main, aside {
+    min-width: 0;
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+}
+
+aside {
+    h2 { margin-top: 0; }
+    ul { padding-left: 20px; line-height: 2; }
+}

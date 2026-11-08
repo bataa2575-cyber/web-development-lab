@@ -1,0 +1,23 @@
+@use "functions" as f;
+
+.multimedia {
+    margin-top: f.rem(30px);
+    padding: f.rem(20px);
+    background-color: var(--surface-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow);
+
+    h2 { margin-top: 0; }
+    h3 { margin-top: 25px; }
+
+    video, iframe {
+        display: block;
+        width: 100%;
+        border: 0;
+        border-radius: var(--radius-medium);
+        margin-bottom: 20px;
+    }
+
+    video { background-color: #000; }
+    svg { display: block; max-width: 100%; }
+}

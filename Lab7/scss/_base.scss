@@ -1,0 +1,34 @@
+@use "functions" as f;
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: f.rem(16px);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img, video, iframe { max-width: 100%; }
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    padding: 10px 16px;
+    color: #fff;
+    background-color: #555;
+    border: 1px solid #777;
+    border-radius: var(--radius-medium);
+    transition: transform 0.3s, background-color 0.3s;
+
+    &:hover {
+        background-color: var(--hover-color);
+        transform: translateY(-2px);
+    }
+
+    &:focus-visible { outline: 3px solid #888; outline-offset: 4px; }
+}

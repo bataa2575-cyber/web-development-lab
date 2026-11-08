@@ -1,0 +1,23 @@
+@use "functions" as f;
+
+header {
+    position: relative;
+    background-color: var(--header-color);
+    color: #fff;
+    text-align: center;
+    padding: f.rem(24px) f.rem(16px);
+
+    h1 {
+        margin: 0 0 f.rem(8px);
+        font-size: f.rem(30px);
+    }
+
+    p {
+        margin: 0 0 f.rem(16px);
+        color: #e5e5e5;
+    }
+
+    button {
+        color: f.contrast(#555);
+    }
+}
